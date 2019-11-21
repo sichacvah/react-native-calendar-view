@@ -2,7 +2,7 @@
   "name": "react-native-calendar-view",
   "version": "1.0.0",
   "description": "Native calendar view for React-Native framework",
-  "react-native": "src/index.tsx",
+  "react-native": "src/index.js",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
   "author": "Sergei Kurochkin",
