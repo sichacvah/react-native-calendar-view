@@ -3,13 +3,11 @@ import { findNodeHandle, requireNativeComponent, StyleSheet, View, processColor,
 
 const defaultTheme = {
   pastDayColor: 'gray',
-  pastDayFontFamily: 'Roboto',
   pastDayFontWeight: '400',
   pastDayFontSize: 16,
 
   dayColor: 'black',
   dayBackgroundColor: 'white',
-  dayFontFamily: 'Roboto',
   dayFontSize: 16,
   dayFontWeight: '400',
   dayUnderlayColor: '#ddd',
@@ -17,12 +15,10 @@ const defaultTheme = {
 
   headerBackgroundColor: 'white',
   monthTitleColor: 'silver',
-  monthTitleFontFamily: 'Roboto',
   monthTitleFontSize: 20,
   monthTitleFontWeight: 'bold',
   weekdayColor: 'black',
   weekdayBackgroundColor: 'white',
-  weekdayFontFamily: 'Roboto',
   weekdayFontSize: 16,
   weekdayFontWeight: '400',
   selectionColor: 'palevioletred',
