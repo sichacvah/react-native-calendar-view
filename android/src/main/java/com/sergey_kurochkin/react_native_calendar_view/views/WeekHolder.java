@@ -4,6 +4,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+
 import com.sergey_kurochkin.react_native_calendar_view.interfaces.ICalendarDay;
 
 import java.util.ArrayList;
@@ -20,14 +21,13 @@ public class WeekHolder {
     }
 
     List<DayHolder> generateDayHolders() {
+
         ArrayList<DayHolder> dayHolders = new ArrayList<>();
         for (int i = 0; i < 7; i++) {
             dayHolders.add(new DayHolder(dayConfig));
         }
         return dayHolders;
     }
-
-
 
     public View inflateWeekView(LinearLayout parent) {
         container = new LinearLayout(parent.getContext());

@@ -1,5 +1,6 @@
 import React, { PureComponent, Component, ComponentClass } from 'react'
 import { findNodeHandle, requireNativeComponent, StyleSheet, View, processColor, SafeAreaView, Animated } from 'react-native'
+import { Colors } from 'react-native/Libraries/NewAppScreen'
 
 const defaultTheme = {
   pastDayColor: 'gray',
@@ -14,7 +15,7 @@ const defaultTheme = {
   borderColor: 'silver',
 
   headerBackgroundColor: 'white',
-  monthTitleColor: 'silver',
+  monthTitleColor: Colors.light,
   monthTitleFontSize: 20,
   monthTitleFontWeight: 'bold',
   weekdayColor: 'black',

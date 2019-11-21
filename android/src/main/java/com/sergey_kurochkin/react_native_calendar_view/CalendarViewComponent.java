@@ -322,6 +322,8 @@ public class CalendarViewComponent extends RelativeLayout {
                 container.calendarHeaderText.setTypeface(Typeface.create(theme.getMonthTitleFontFamily(), theme.getMonthTitleFontWeight()));
                 container.calendarHeaderText.setTextSize(theme.getMonthTitleFontSize());
                 container.calendarHeaderText.setTextColor(theme.getMonthTitleColor());
+//                container.calendarHeaderText.setTextAlignment(CENTER_HORIZONTAL);
+                container.calendarHeaderText.setGravity(CENTER_HORIZONTAL);
             }
 
 

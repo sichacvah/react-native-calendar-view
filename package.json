@@ -10,6 +10,7 @@
   "files": [
     "/android",
     "!/android/build",
+    "!/Example",
     "ios",
     "/src",
     "/lib",
