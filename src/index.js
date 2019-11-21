@@ -1,46 +1,7 @@
 import { PureComponent, Component, ComponentClass } from 'react'
 import { findNodeHandle, requireNativeComponent, StyleSheet, View, processColor, SafeAreaView, Animated } from 'react-native'
 
-export type Color = string | number;
-
-export type MarkedDateBase = {
-  color?: Color
-  textColor?: Color
-}
-
-export type MarkedDate = MarkedDateBase & {
-  starting?: MarkedDateBase,
-  ending?: MarkedDateBase
-}
-
-export type Theme = {
-  dayColor: Color
-  dayBackgroundColor: Color
-  dayFontFamily: string
-  dayFontSize: number
-  dayFontWeight: string
-  headerBackgroundColor: Color
-  monthTitleColor: Color
-  monthTitleFontFamily: string
-  monthTitleFontSize: number
-  monthTitleFontWeight: string
-  weekdayColor: Color
-  weekdayFontFamily: string
-  weekdayBackgroundColor: Color
-  weekdayFontSize: number
-  weekdayFontWeight: string
-  borderColor: Color
-  dayUnderlayColor: Color
-  pastDayColor: Color
-  pastDayFontFamily: string
-  pastDayFontSize: number
-  pastDayFontWeight: string
-  selectionColor: Color
-  selectionEdgeColor: Color
-  selectionTextColor: Color
-}
-
-const defaultTheme: Theme = {
+const defaultTheme = {
   pastDayColor: 'gray',
   pastDayFontFamily: 'Roboto',
   pastDayFontWeight: '400',
@@ -69,32 +30,19 @@ const defaultTheme: Theme = {
   selectionTextColor: 'black'
 }
 
-export interface MarkedDates  {
-  [key: string]: MarkedDate
-}
-
-export type CalendarViewProps = {
-  from?: string,
-  to?: string,
-  markedDates?: MarkedDates,
-  theme?: Theme,
-  date?: string,
-  onScroll?: Animated.Value
-  onSelectionChange?: (event: { from?: string, to?: string }) => any
-}
 
 
-const RNCalendarView: ComponentClass<CalendarViewProps> = requireNativeComponent('CalendarView')
+const RNCalendarView = requireNativeComponent('CalendarView')
 
 
-const processMarkedDateBase = (markedDate: MarkedDate) => ({
+const processMarkedDateBase = (markedDate) => ({
   ...markedDate,
   color: processColor(markedDate.color),
   textColor: processColor(markedDate.textColor)
 })
 
 
-const processMarkedDates = (markedDates: MarkedDates) => {
+const processMarkedDates = (markedDates) => {
   return Object.keys(markedDates).reduce((acc, key) => {
     const markedDate = markedDates[key]
     const starting = markedDate.starting
@@ -112,8 +60,7 @@ const processMarkedDates = (markedDates: MarkedDates) => {
 
 
 
-class WrappedRNCalendarView extends Component<CalendarViewProps> {
-  _nativeViewRef: any;
+class WrappedRNCalendarView extends Component {
 
   render() {
     return (
@@ -134,15 +81,9 @@ const AnimatedRNCalendarView = Animated.createAnimatedComponent(WrappedRNCalenda
 
 
 
-export class CalendarView extends PureComponent<CalendarViewProps> {
-  valueX?: Animated.Value
-  event?: (...args: any[]) => void
-  state: {
-    from?: string
-    to?: string
-  }
+export class CalendarView extends PureComponent {
 
-  constructor(props: CalendarViewProps) {
+  constructor(props) {
     super(props)
     if (this.props.onScroll) {
       this.valueX = new Animated.Value(0)
@@ -165,11 +106,11 @@ export class CalendarView extends PureComponent<CalendarViewProps> {
     }
   }
 
-  changeState = (state: { from?: string, to?: string }) => {
+  changeState = (state) => {
     this.setState(state, this.callChangeState)
   }
 
-  onDatePress = ({ nativeEvent: { date } }: { nativeEvent: { date: string } }) => {
+  onDatePress = ({ nativeEvent: { date } }) => {
     const { from, to } = this.state
   
     if (!from && !to) {
