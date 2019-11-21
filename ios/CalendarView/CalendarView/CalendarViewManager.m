@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <React/RCTViewManager.h>
-//#import "CalendarViewComponent.h"
 #import "RNComponent/CalendarViewComponent.h"
 #import <React/RCTRootView.h>
 #import <React/RCTBridge.h>

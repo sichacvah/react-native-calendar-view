@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE3241AA2386940E00153277 /* CalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241A92386940E00153277 /* CalendarView.m */; };
-		EE3241AB2386940E00153277 /* CalendarView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE3241A82386940E00153277 /* CalendarView.h */; };
 		EE3241B22386A27F00153277 /* CalendarViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241B12386A27F00153277 /* CalendarViewManager.m */; };
 		EE3241CA2386ADA100153277 /* CalendarViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241C92386ADA100153277 /* CalendarViewComponent.m */; };
 		EE3241CD2386AF0E00153277 /* Edges.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241CC2386AF0E00153277 /* Edges.m */; };
@@ -26,6 +24,7 @@
 		EE3241F62386C15600153277 /* CalendarViewMonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241F52386C15600153277 /* CalendarViewMonthCell.m */; };
 		EE3241F92386C2D600153277 /* DayConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241F82386C2D600153277 /* DayConfig.m */; };
 		EE3241FC2386C30F00153277 /* MonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241FB2386C30F00153277 /* MonthView.m */; };
+		EE3242142386E9B800153277 /* UIView+EdgeBorders.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3242132386E9B800153277 /* UIView+EdgeBorders.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,7 +34,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				EE3241AB2386940E00153277 /* CalendarView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,8 +41,6 @@
 
 /* Begin PBXFileReference section */
 		EE3241A52386940E00153277 /* libCalendarView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCalendarView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE3241A82386940E00153277 /* CalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarView.h; sourceTree = "<group>"; };
-		EE3241A92386940E00153277 /* CalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarView.m; sourceTree = "<group>"; };
 		EE3241B12386A27F00153277 /* CalendarViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarViewManager.m; sourceTree = "<group>"; };
 		EE3241C82386AD9300153277 /* CalendarViewComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarViewComponent.h; sourceTree = "<group>"; };
 		EE3241C92386ADA100153277 /* CalendarViewComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarViewComponent.m; sourceTree = "<group>"; };
@@ -81,6 +77,8 @@
 		EE3241F82386C2D600153277 /* DayConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayConfig.m; sourceTree = "<group>"; };
 		EE3241FA2386C2F100153277 /* MonthView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonthView.h; sourceTree = "<group>"; };
 		EE3241FB2386C30F00153277 /* MonthView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonthView.m; sourceTree = "<group>"; };
+		EE3242122386E9A300153277 /* UIView+EdgeBorders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+EdgeBorders.h"; sourceTree = "<group>"; };
+		EE3242132386E9B800153277 /* UIView+EdgeBorders.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+EdgeBorders.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +111,10 @@
 		EE3241A72386940E00153277 /* CalendarView */ = {
 			isa = PBXGroup;
 			children = (
+				EE3242112386E97200153277 /* Utils+Extensions */,
 				EE3241EE2386BDAC00153277 /* View */,
 				EE3241E02386BA6E00153277 /* Model */,
 				EE3241C72386AD7300153277 /* RNComponent */,
-				EE3241A82386940E00153277 /* CalendarView.h */,
-				EE3241A92386940E00153277 /* CalendarView.m */,
 				EE3241B12386A27F00153277 /* CalendarViewManager.m */,
 			);
 			path = CalendarView;
@@ -177,6 +174,15 @@
 				EE3241FB2386C30F00153277 /* MonthView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EE3242112386E97200153277 /* Utils+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE3242122386E9A300153277 /* UIView+EdgeBorders.h */,
+				EE3242132386E9B800153277 /* UIView+EdgeBorders.m */,
+			);
+			path = "Utils+Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +245,7 @@
 				EE3241E62386BB4B00153277 /* CalendarDay.m in Sources */,
 				EE3241F92386C2D600153277 /* DayConfig.m in Sources */,
 				EE3241B22386A27F00153277 /* CalendarViewManager.m in Sources */,
+				EE3242142386E9B800153277 /* UIView+EdgeBorders.m in Sources */,
 				EE3241CA2386ADA100153277 /* CalendarViewComponent.m in Sources */,
 				EE3241CD2386AF0E00153277 /* Edges.m in Sources */,
 				EE3241ED2386BD3F00153277 /* CalendarMonthConfig.m in Sources */,
@@ -248,7 +255,6 @@
 				EE3241EA2386BCE500153277 /* CalendarMonth.m in Sources */,
 				EE3241F32386C0BB00153277 /* CalendarView.m in Sources */,
 				EE3241D02386AFA400153277 /* CalendarViewEvent.m in Sources */,
-				EE3241AA2386940E00153277 /* CalendarView.m in Sources */,
 				EE3241DF2386B89800153277 /* WeekdaysHeaderItem.m in Sources */,
 				EE3241F62386C15600153277 /* CalendarViewMonthCell.m in Sources */,
 				EE3241DC2386B85100153277 /* WeekdaysHeader.m in Sources */,
