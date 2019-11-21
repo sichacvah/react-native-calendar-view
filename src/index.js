@@ -1,4 +1,4 @@
-import { PureComponent, Component, ComponentClass } from 'react'
+import React, { PureComponent, Component, ComponentClass } from 'react'
 import { findNodeHandle, requireNativeComponent, StyleSheet, View, processColor, SafeAreaView, Animated } from 'react-native'
 
 const defaultTheme = {
