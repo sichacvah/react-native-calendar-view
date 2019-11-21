@@ -64,7 +64,7 @@ class WrappedRNCalendarView extends Component {
 
   render() {
     return (
-      <View
+      <RNCalendarView
           {...this.props}
           ref={(ref) => this._nativeViewRef = ref}
         />
