@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE3241AA2386940E00153277 /* CalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241A92386940E00153277 /* CalendarView.m */; };
+		EE3241AB2386940E00153277 /* CalendarView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE3241A82386940E00153277 /* CalendarView.h */; };
+		EE3241B22386A27F00153277 /* CalendarViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241B12386A27F00153277 /* CalendarViewManager.m */; };
+		EE3241CA2386ADA100153277 /* CalendarViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241C92386ADA100153277 /* CalendarViewComponent.m */; };
+		EE3241CD2386AF0E00153277 /* Edges.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241CC2386AF0E00153277 /* Edges.m */; };
+		EE3241D02386AFA400153277 /* CalendarViewEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241CF2386AFA400153277 /* CalendarViewEvent.m */; };
+		EE3241D32386B3EF00153277 /* ComponentTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241D22386B3EF00153277 /* ComponentTheme.m */; };
+		EE3241D62386B5EA00153277 /* DayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241D52386B5EA00153277 /* DayCell.m */; };
+		EE3241D92386B62100153277 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241D82386B62100153277 /* Header.m */; };
+		EE3241DC2386B85100153277 /* WeekdaysHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241DB2386B85100153277 /* WeekdaysHeader.m */; };
+		EE3241DF2386B89800153277 /* WeekdaysHeaderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241DE2386B89800153277 /* WeekdaysHeaderItem.m */; };
+		EE3241E32386BAA900153277 /* CalendarDate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241E22386BAA900153277 /* CalendarDate.m */; };
+		EE3241E62386BB4B00153277 /* CalendarDay.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241E52386BB4B00153277 /* CalendarDay.m */; };
+		EE3241EA2386BCE500153277 /* CalendarMonth.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241E92386BCE500153277 /* CalendarMonth.m */; };
+		EE3241ED2386BD3F00153277 /* CalendarMonthConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241EC2386BD3F00153277 /* CalendarMonthConfig.m */; };
+		EE3241F32386C0BB00153277 /* CalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241F22386C0BB00153277 /* CalendarView.m */; };
+		EE3241F62386C15600153277 /* CalendarViewMonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241F52386C15600153277 /* CalendarViewMonthCell.m */; };
+		EE3241F92386C2D600153277 /* DayConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241F82386C2D600153277 /* DayConfig.m */; };
+		EE3241FC2386C30F00153277 /* MonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3241FB2386C30F00153277 /* MonthView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE3241A32386940E00153277 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				EE3241AB2386940E00153277 /* CalendarView.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EE3241A52386940E00153277 /* libCalendarView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCalendarView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3241A82386940E00153277 /* CalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarView.h; sourceTree = "<group>"; };
+		EE3241A92386940E00153277 /* CalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarView.m; sourceTree = "<group>"; };
+		EE3241B12386A27F00153277 /* CalendarViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarViewManager.m; sourceTree = "<group>"; };
+		EE3241C82386AD9300153277 /* CalendarViewComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarViewComponent.h; sourceTree = "<group>"; };
+		EE3241C92386ADA100153277 /* CalendarViewComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarViewComponent.m; sourceTree = "<group>"; };
+		EE3241CB2386ADB500153277 /* Edges.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Edges.h; sourceTree = "<group>"; };
+		EE3241CC2386AF0E00153277 /* Edges.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Edges.m; sourceTree = "<group>"; };
+		EE3241CE2386AF6A00153277 /* CalendarViewEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarViewEvent.h; sourceTree = "<group>"; };
+		EE3241CF2386AFA400153277 /* CalendarViewEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarViewEvent.m; sourceTree = "<group>"; };
+		EE3241D12386B3DD00153277 /* ComponentTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentTheme.h; sourceTree = "<group>"; };
+		EE3241D22386B3EF00153277 /* ComponentTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentTheme.m; sourceTree = "<group>"; };
+		EE3241D42386B5D000153277 /* DayCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayCell.h; sourceTree = "<group>"; };
+		EE3241D52386B5EA00153277 /* DayCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayCell.m; sourceTree = "<group>"; };
+		EE3241D72386B60800153277 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		EE3241D82386B62100153277 /* Header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
+		EE3241DA2386B63E00153277 /* WeekdaysHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeekdaysHeader.h; sourceTree = "<group>"; };
+		EE3241DB2386B85100153277 /* WeekdaysHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeekdaysHeader.m; sourceTree = "<group>"; };
+		EE3241DD2386B88B00153277 /* WeekdaysHeaderItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeekdaysHeaderItem.h; sourceTree = "<group>"; };
+		EE3241DE2386B89800153277 /* WeekdaysHeaderItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeekdaysHeaderItem.m; sourceTree = "<group>"; };
+		EE3241E12386BA7E00153277 /* CalendarDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarDate.h; sourceTree = "<group>"; };
+		EE3241E22386BAA900153277 /* CalendarDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarDate.m; sourceTree = "<group>"; };
+		EE3241E42386BB3200153277 /* CalendarDay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarDay.h; sourceTree = "<group>"; };
+		EE3241E52386BB4B00153277 /* CalendarDay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarDay.m; sourceTree = "<group>"; };
+		EE3241E72386BC6E00153277 /* CalendarDayOwner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarDayOwner.h; sourceTree = "<group>"; };
+		EE3241E82386BC8500153277 /* CalendarMonth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarMonth.h; sourceTree = "<group>"; };
+		EE3241E92386BCE500153277 /* CalendarMonth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarMonth.m; sourceTree = "<group>"; };
+		EE3241EB2386BD1B00153277 /* CalendarMonthConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarMonthConfig.h; sourceTree = "<group>"; };
+		EE3241EC2386BD3F00153277 /* CalendarMonthConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarMonthConfig.m; sourceTree = "<group>"; };
+		EE3241EF2386BDBD00153277 /* CalendarDelegates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarDelegates.h; sourceTree = "<group>"; };
+		EE3241F02386BDEC00153277 /* CalendarViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarViewProtocol.h; sourceTree = "<group>"; };
+		EE3241F12386BE1000153277 /* CalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarView.h; sourceTree = "<group>"; };
+		EE3241F22386C0BB00153277 /* CalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarView.m; sourceTree = "<group>"; };
+		EE3241F42386C13D00153277 /* CalendarViewMonthCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarViewMonthCell.h; sourceTree = "<group>"; };
+		EE3241F52386C15600153277 /* CalendarViewMonthCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarViewMonthCell.m; sourceTree = "<group>"; };
+		EE3241F72386C26E00153277 /* DayConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayConfig.h; sourceTree = "<group>"; };
+		EE3241F82386C2D600153277 /* DayConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayConfig.m; sourceTree = "<group>"; };
+		EE3241FA2386C2F100153277 /* MonthView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonthView.h; sourceTree = "<group>"; };
+		EE3241FB2386C30F00153277 /* MonthView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonthView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE3241A22386940E00153277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE32419C2386940E00153277 = {
+			isa = PBXGroup;
+			children = (
+				EE3241A72386940E00153277 /* CalendarView */,
+				EE3241A62386940E00153277 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE3241A62386940E00153277 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE3241A52386940E00153277 /* libCalendarView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE3241A72386940E00153277 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				EE3241EE2386BDAC00153277 /* View */,
+				EE3241E02386BA6E00153277 /* Model */,
+				EE3241C72386AD7300153277 /* RNComponent */,
+				EE3241A82386940E00153277 /* CalendarView.h */,
+				EE3241A92386940E00153277 /* CalendarView.m */,
+				EE3241B12386A27F00153277 /* CalendarViewManager.m */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		EE3241C72386AD7300153277 /* RNComponent */ = {
+			isa = PBXGroup;
+			children = (
+				EE3241C82386AD9300153277 /* CalendarViewComponent.h */,
+				EE3241C92386ADA100153277 /* CalendarViewComponent.m */,
+				EE3241CB2386ADB500153277 /* Edges.h */,
+				EE3241CC2386AF0E00153277 /* Edges.m */,
+				EE3241CE2386AF6A00153277 /* CalendarViewEvent.h */,
+				EE3241CF2386AFA400153277 /* CalendarViewEvent.m */,
+				EE3241D12386B3DD00153277 /* ComponentTheme.h */,
+				EE3241D22386B3EF00153277 /* ComponentTheme.m */,
+				EE3241D42386B5D000153277 /* DayCell.h */,
+				EE3241D52386B5EA00153277 /* DayCell.m */,
+				EE3241D72386B60800153277 /* Header.h */,
+				EE3241D82386B62100153277 /* Header.m */,
+				EE3241DA2386B63E00153277 /* WeekdaysHeader.h */,
+				EE3241DB2386B85100153277 /* WeekdaysHeader.m */,
+				EE3241DD2386B88B00153277 /* WeekdaysHeaderItem.h */,
+				EE3241DE2386B89800153277 /* WeekdaysHeaderItem.m */,
+			);
+			path = RNComponent;
+			sourceTree = "<group>";
+		};
+		EE3241E02386BA6E00153277 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE3241E12386BA7E00153277 /* CalendarDate.h */,
+				EE3241E22386BAA900153277 /* CalendarDate.m */,
+				EE3241E42386BB3200153277 /* CalendarDay.h */,
+				EE3241E52386BB4B00153277 /* CalendarDay.m */,
+				EE3241E72386BC6E00153277 /* CalendarDayOwner.h */,
+				EE3241E82386BC8500153277 /* CalendarMonth.h */,
+				EE3241E92386BCE500153277 /* CalendarMonth.m */,
+				EE3241EB2386BD1B00153277 /* CalendarMonthConfig.h */,
+				EE3241EC2386BD3F00153277 /* CalendarMonthConfig.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE3241EE2386BDAC00153277 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE3241EF2386BDBD00153277 /* CalendarDelegates.h */,
+				EE3241F02386BDEC00153277 /* CalendarViewProtocol.h */,
+				EE3241F12386BE1000153277 /* CalendarView.h */,
+				EE3241F22386C0BB00153277 /* CalendarView.m */,
+				EE3241F42386C13D00153277 /* CalendarViewMonthCell.h */,
+				EE3241F52386C15600153277 /* CalendarViewMonthCell.m */,
+				EE3241F72386C26E00153277 /* DayConfig.h */,
+				EE3241F82386C2D600153277 /* DayConfig.m */,
+				EE3241FA2386C2F100153277 /* MonthView.h */,
+				EE3241FB2386C30F00153277 /* MonthView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE3241A42386940E00153277 /* CalendarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3241AE2386940E00153277 /* Build configuration list for PBXNativeTarget "CalendarView" */;
+			buildPhases = (
+				EE3241A12386940E00153277 /* Sources */,
+				EE3241A22386940E00153277 /* Frameworks */,
+				EE3241A32386940E00153277 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalendarView;
+			productName = CalendarView;
+			productReference = EE3241A52386940E00153277 /* libCalendarView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE32419D2386940E00153277 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = SergeiKurochkin;
+				TargetAttributes = {
+					EE3241A42386940E00153277 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = EE3241A02386940E00153277 /* Build configuration list for PBXProject "CalendarView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE32419C2386940E00153277;
+			productRefGroup = EE3241A62386940E00153277 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE3241A42386940E00153277 /* CalendarView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE3241A12386940E00153277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3241E62386BB4B00153277 /* CalendarDay.m in Sources */,
+				EE3241F92386C2D600153277 /* DayConfig.m in Sources */,
+				EE3241B22386A27F00153277 /* CalendarViewManager.m in Sources */,
+				EE3241CA2386ADA100153277 /* CalendarViewComponent.m in Sources */,
+				EE3241CD2386AF0E00153277 /* Edges.m in Sources */,
+				EE3241ED2386BD3F00153277 /* CalendarMonthConfig.m in Sources */,
+				EE3241D32386B3EF00153277 /* ComponentTheme.m in Sources */,
+				EE3241D92386B62100153277 /* Header.m in Sources */,
+				EE3241D62386B5EA00153277 /* DayCell.m in Sources */,
+				EE3241EA2386BCE500153277 /* CalendarMonth.m in Sources */,
+				EE3241F32386C0BB00153277 /* CalendarView.m in Sources */,
+				EE3241D02386AFA400153277 /* CalendarViewEvent.m in Sources */,
+				EE3241AA2386940E00153277 /* CalendarView.m in Sources */,
+				EE3241DF2386B89800153277 /* WeekdaysHeaderItem.m in Sources */,
+				EE3241F62386C15600153277 /* CalendarViewMonthCell.m in Sources */,
+				EE3241DC2386B85100153277 /* WeekdaysHeader.m in Sources */,
+				EE3241E32386BAA900153277 /* CalendarDate.m in Sources */,
+				EE3241FC2386C30F00153277 /* MonthView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EE3241AC2386940E00153277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE3241AD2386940E00153277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE3241AF2386940E00153277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CFQPN73L8;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE3241B02386940E00153277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CFQPN73L8;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE3241A02386940E00153277 /* Build configuration list for PBXProject "CalendarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3241AC2386940E00153277 /* Debug */,
+				EE3241AD2386940E00153277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE3241AE2386940E00153277 /* Build configuration list for PBXNativeTarget "CalendarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3241AF2386940E00153277 /* Debug */,
+				EE3241B02386940E00153277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE32419D2386940E00153277 /* Project object */;
+}

@@ -1,0 +1,62 @@
+{
+  "name": "react-native-calendar-view",
+  "version": "1.0.0",
+  "description": "Native calendar view for React-Native framework",
+  "react-native": "src/index.tsx",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "author": "Sergei Kurochkin",
+  "license": "MIT",
+  "files": [
+    "/android",
+    "!/android/build",
+    "ios",
+    "/src",
+    "/lib",
+    "/*.podspec"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.61"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/runtime": "^7.7.2",
+    "@react-native-community/bob": "^0.7.0",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "@semantic-release/changelog": "^3.0.5",
+    "@semantic-release/git": "^7.0.18",
+    "@types/jest": "^24.0.23",
+    "@types/react-native": "^0.60.22",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.6.0",
+    "husky": "^3.1.0",
+    "jest": "24.8.0",
+    "lint-staged": "^9.4.3",
+    "metro-react-native-babel-preset": "^0.57.0",
+    "react": "16.8.3",
+    "react-native": "0.61",
+    "rimraf": "2.6.3",
+    "semantic-release": "15.13.3",
+    "ts-jest": "24.0.2",
+    "typescript": "3.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sichacvah/react-native-calendar-view.git"
+  },
+  "scripts": {
+    "start": "react-native start"
+  },
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  }
+}
