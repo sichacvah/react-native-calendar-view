@@ -8,68 +8,80 @@
 
 import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
-  View,
+  Animated,
   Text,
-  StatusBar,
+  Platform,
+  View
 } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
 import { CalendarView } from 'react-native-calendar-view'
 
+
+const now = new Date()
+const format = (date) => {
+  return date.toISOString().slice(0, 10)
+}
+const addDays = (date, days) => {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate() + days)
+}
+const markedDates = {
+  [format(addDays(now, 1))]: {
+    starting: {
+      color: 'red',
+    }
+  },
+  [format(addDays(now, 2))]: {
+    color: 'pink'
+  },
+  [format(addDays(now, 3))]: {
+    color: 'pink'
+  },
+  [format(addDays(now, 4))]: {
+    color: 'pink'
+  },
+  [format(addDays(now, 5))]: {
+    ending: {
+      color: 'red'
+    }
+  },
+  [format(addDays(now, 10))]: {
+    starting: {
+      color: 'green',
+    }
+  },
+  [format(addDays(now, 11))]: {
+    color: 'lightseagreen',
+    textColor: 'white'
+  },
+  [format(addDays(now, 12))]: {
+    color: 'lightseagreen',
+    textColor: 'white'
+
+  },
+  [format(addDays(now, 13))]: {
+    color: 'lightseagreen',
+    textColor: 'white'
+
+  },
+  [format(addDays(now, 14))]: {
+    ending: {
+      color: 'green'
+    }
+  }
+}
 
 export default class App extends React.Component {
   render() {
     return (
-      <CalendarView theme={{ monthTitleColor: 'purple' }} />
+      <CalendarView theme={{ monthTitleColor: 'purple' }}  markedDates={markedDates}  />
     )
   }
 }
 
-
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
+  container: {
+    flex: 1,
+    borderColor: 'transparent'
+  }
 });

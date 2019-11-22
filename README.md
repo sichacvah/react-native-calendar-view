@@ -31,3 +31,9 @@ and in MainApplication#onCreate
     AndroidThreeTen.init(this);
   }
 ```
+
+## Screenshots
+
+![Android](./AndroidExample.gif)
+
+![iOS](./IOSVideo.gif)
