@@ -29,15 +29,11 @@ import { CalendarView } from 'react-native-calendar-view'
 export default class App extends React.Component {
   render() {
     return (
-      <CalendarView />
+      <CalendarView theme={{ monthTitleColor: 'purple' }} />
     )
   }
 }
-// const App: () => () => {
-//   return (
-//     <CalendarView />
-//   );
-// };
+
 
 const styles = StyleSheet.create({
   scrollView: {

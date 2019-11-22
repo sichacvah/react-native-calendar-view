@@ -133,19 +133,23 @@ export class CalendarView extends PureComponent {
       markedDates = {},
       theme = defaultTheme
     } = this.props
+    const rawTheme = {
+      ...defaultTheme,
+      ...theme
+    }
     const nativeTheme = {
-      ...theme,
-      headerBackgroundColor: processColor(theme.headerBackgroundColor),
-      weekdayColor: processColor(theme.weekdayColor),
-      monthTitleColor: processColor(theme.monthTitleColor),
-      weekdayBackgroundColor: processColor(theme.weekdayBackgroundColor),
-      dayColor: processColor(theme.dayColor),
-      dayBackgroundColor: processColor(theme.dayBackgroundColor),
-      borderColor: processColor(theme.borderColor),
-      pastDayColor: processColor(theme.pastDayColor),
-      selectionColor: processColor(theme.selectionColor),
-      selectionEdgeColor: processColor(theme.selectionEdgeColor),
-      selectionTextColor: processColor(theme.selectionTextColor)
+      ...rawTheme,
+      headerBackgroundColor: processColor(rawTheme.headerBackgroundColor),
+      weekdayColor: processColor(rawTheme.weekdayColor),
+      monthTitleColor: processColor(rawTheme.monthTitleColor),
+      weekdayBackgroundColor: processColor(rawTheme.weekdayBackgroundColor),
+      dayColor: processColor(rawTheme.dayColor),
+      dayBackgroundColor: processColor(rawTheme.dayBackgroundColor),
+      borderColor: processColor(rawTheme.borderColor),
+      pastDayColor: processColor(rawTheme.pastDayColor),
+      selectionColor: processColor(rawTheme.selectionColor),
+      selectionEdgeColor: processColor(rawTheme.selectionEdgeColor),
+      selectionTextColor: processColor(rawTheme.selectionTextColor)
     }
 
     return (

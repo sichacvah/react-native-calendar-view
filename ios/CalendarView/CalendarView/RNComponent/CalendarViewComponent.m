@@ -79,6 +79,7 @@ monthHeaderDelegate:self
   cell.backgroundColor = self.theme.headerBackgroundColor;
   cell.label.backgroundColor = self.theme.headerBackgroundColor;
   cell.label.text = [CalendarDate formatHeader:month.month];
+  [cell.label setTextColor:self.theme.monthTitleColor];
   [cell setWeekdayConfig:[[HeaderWeekdayConfig alloc] init:self.theme.weekdayBackgroundColor
                                                         font:self.theme.weekdayFont
                                                 weekdayColor:self.theme.weekdayColor]];

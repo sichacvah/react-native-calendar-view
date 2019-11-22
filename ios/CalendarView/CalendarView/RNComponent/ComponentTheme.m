@@ -13,6 +13,7 @@
 
 
 - (void) setup {
+  self.monthTitleColor = [self getColor:@"monthTitleColor"];
   self.selectionEdgeColor = [self getColor:@"selectionEdgeColor"];
   self.selectionTextColor = [self getColor:@"selectionTextColor"];
   self.selectionColor     = [self getColor:@"selectionColor"];

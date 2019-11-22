@@ -27,6 +27,7 @@
 @property (nonatomic) UIColor* _Nullable pastDayColor;
 @property (nonatomic) UIColor* _Nullable dayColor;
 @property (nonatomic) UIColor* _Nullable weekdayColor;
+@property (nonatomic) UIColor* _Nullable monthTitleColor;
 @property (nonatomic, nonnull) NSDictionary* rawTheme;
 
 - (instancetype _Nonnull )init:(NSDictionary * _Nonnull) rawTheme;
