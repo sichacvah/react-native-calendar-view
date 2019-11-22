@@ -22,6 +22,8 @@
   return _theme;
 }
 
+- (void) setReactFrame:(CGRect)frame {}
+
 - (void) setTheme:(ComponentTheme *)theme {
   _theme = theme;
   [self.calendar reloadData];
@@ -61,6 +63,7 @@ monthHeaderDelegate:self
   [self.calendar.trailingAnchor constraintEqualToAnchor:self.trailingAnchor].active = YES;
   [self.calendar cofigureDayConfig];
 }
+
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
